@@ -20,6 +20,7 @@ public class LoginTest extends TestBase{
 	
 	Assert.assertTrue(hp.isCartIconDisplayed(),"Cart icon should be visible after login");
 	Assert.assertEquals(hp.getPageTitle(), "Products");
+	System.out.println("Checked the cart: "+hp.isCartIconDisplayed());
 	
 	}
 }

@@ -27,7 +27,7 @@ public class ExcelReporter {
 	}
 	
 	public static void saveReport() {
-		try(FileOutputStream outputStream = new FileOutputStream(".//target//TestNG_Result.xlsx")) {
+		try(FileOutputStream outputStream = new FileOutputStream(".//TestNG_Result.xlsx")) {
 			workbook.write(outputStream);	
 		}catch(IOException e) {
 			e.printStackTrace();
