@@ -15,7 +15,7 @@ public class ExcelReporter {
 	private static Sheet sheet = workbook.createSheet("Test Results");
 	private static int rowCount = 0;
 	public static Row row;
-	String path = ".//target//TestData.xlsx";
+	String path = ".//target//TestNG_Result.xlsx";
 
 	static {
 		Row header = sheet.createRow(rowCount++);
@@ -27,7 +27,7 @@ public class ExcelReporter {
 	}
 	
 	public static void saveReport() {
-		try(FileOutputStream outputStream = new FileOutputStream("./target/TestNG_Result.xlsx")) {
+		try(FileOutputStream outputStream = new FileOutputStream(".//target//TestNG_Result.xlsx")) {
 			workbook.write(outputStream);	
 		}catch(IOException e) {
 			e.printStackTrace();
