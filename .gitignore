@@ -1,2 +1,11 @@
-
+# Ignore Maven build folder
 /target/
+
+# Ignore generated Excel reports
+/TestNG_Result.xlsx
+*.xlsx
+
+# Ignore logs and reports
+*.log
+*.html
+*.xml
